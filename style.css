@@ -36,14 +36,15 @@ header {
     position: absolute;
     display: flex;
     /* visibility: hidden; */
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     opacity: 0;
     flex-direction: column;
     top: calc(1em + 12px);
     background-color: rgba(27, 105, 105, 0.3);
     border-radius: 5px;
-    transition: opacity 200ms ease-in-out 50ms;
+    transition: opacity 200ms ease-in-out 50ms,
+    max-height 700ms ease-in-out 50ms;
 }
 
 .options {
@@ -59,6 +60,6 @@ header {
 .optionsVisible {
     /* display: flex; */
     /* visibility: visible; */
-    height: auto;
+    max-height: 500px;
     opacity: 1;
 }
